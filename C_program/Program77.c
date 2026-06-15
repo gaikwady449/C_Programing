@@ -1,0 +1,28 @@
+
+# include <stdio.h>
+void DisplayDigit(int iNo)
+{
+    int iDigit=0;
+
+    while(iNo!=0)
+    {
+       iDigit=iNo%10;
+       printf("%d\n",iDigit);
+       iNo=iNo/10;
+    }
+
+}
+int main()
+{
+
+    int iVlaue=0;
+
+    printf("Enter a number");
+    scanf("%d",&iVlaue);
+
+    DisplayDigit(iVlaue);
+
+
+
+    return 0;
+}
