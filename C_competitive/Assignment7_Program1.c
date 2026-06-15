@@ -1,0 +1,32 @@
+// Write a program which accept number from user and display below pAttarn
+// 5
+// * * * * * # # # # #
+
+
+# include <stdio.h>
+void  Display(int iNo)
+{
+    int iCnt=0;
+    
+    for(iCnt=1;iCnt<=iNo;iCnt++)
+    {
+        printf("*\t");
+    }
+    for(iCnt=1;iCnt<=iNo;iCnt++)
+    {
+        printf("#\t");
+    }
+
+}
+int main()
+{
+    int iValue=0;
+    int iRet=0;
+
+    printf("Enter a number ");
+    scanf("%d",&iValue);
+
+    Display(iValue);
+
+    return 0;
+}
